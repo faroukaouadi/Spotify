@@ -1,0 +1,189 @@
+.main-container {
+  margin-left: 245px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ajout de cette ligne pour justifier le contenu */
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #101010;
+  padding: 14px 30px;
+}
+
+
+
+.topbar .prev-next-buttons button {
+  color: #7a7a7a;
+  cursor: not-allowed;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  font-size: 18px;
+  border: 0px;
+  background-color: #090909;
+  margin-right: 10px;
+}
+
+.topbar .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .navbar ul {
+  list-style: none;
+}
+
+.topbar .navbar ul li {
+  display: inline-block;
+  margin: 0px 8px;
+  width: 70px;
+}
+
+.topbar .navbar ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover,
+.topbar .navbar ul li a:active,
+.topbar .navbar ul li a:focus {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.topbar .navbar ul li.divider {
+  color: #ffffff;
+  font-size: 26px;
+  margin: 0px 20px;
+  width: auto;
+}
+
+.topbar .navbar button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.topbar .navbar button:hover,
+.topbar .navbar button:active,
+.topbar .navbar button:focus {
+  background-color: #f2f2f2;
+}
+
+/* .spotify-playlists {
+  padding: 20px 40px;
+}
+
+.spotify-playlists h2 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.spotify-playlists .list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+} */
+.spotify-playlists {
+  background-color: #222020;
+  padding: 20px 40px;
+}
+.list {
+  display: flex; /* Afficher les playlists verticalement */
+  flex-wrap: wrap; /* Permettre le retour à la ligne des playlists si nécessaire */
+  gap: 20px; /* Espacement entre les playlists */
+  margin-top: 50px;
+}
+.spotify-playlists h2 {
+  color: white; /* Changement de la couleur du texte en blanc */
+}
+
+.item {
+  width: calc(50% - 10px); /* Définir la largeur de chaque playlist à 50% de la largeur de son conteneur avec un espacement de 20px */
+  margin-bottom: 20px; /* Espacement entre les playlists */
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 10px;
+}
+
+.info h4 {
+  margin: 0;
+}
+
+.info p {
+  margin: 5px 0;
+}
+/* Les autres règles de style pour .spotify-playlists sont omises pour plus de concision */
+
+.preview {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview h6 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.preview p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.preview button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.search-container {
+  border: 2px solid #ffffff; /* Bordure de couleur blanche */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 5px; /* Rembourrage interne */
+  margin-bottom: 20px; /* Marge inférieure */
+  display: flex; /* Utiliser un modèle de boîte flexible */
+  justify-content: center; /* Centrer horizontalement */
+}
+.search-input {
+  width: 80%; /* Largeur de la barre de recherche */
+  height: 40px; /* Hauteur de la barre de recherche */
+  font-size: 16px; /* Taille de la police */
+  padding: 5px; /* Rembourrage interne */
+  border: none; /* Supprimez la bordure par défaut */
+  outline: none; /* Supprimez la mise en surbrillance par défaut */
+  background-color: transparent; /* Fond transparent */
+  color: #ffffff; /* Couleur du texte */
+}

@@ -1,0 +1,41 @@
+/* Sidebar */
+.Sidebar {
+    background-color: #040306;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  .logo {
+    padding: 20px;
+  }
+  
+  .logo img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navigation ul li {
+    padding: 10px 20px;
+  }
+  
+  .navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navigation ul li a:hover {
+    color: #1db954;
+  }
+  
